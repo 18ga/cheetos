@@ -4,7 +4,7 @@ shared["F​F​l​a​g​A​X​C​o​m​b​i​n​e​G​e​t​O​
     },
     
     ["Universal"] = {
-        ['Enabled'] = (true),
+        ['Enabled'] = (true), --[[ Fake Dahoods/Voidfalls ]]
     
     ["SilentAim"] = {
         ['Enabled'] = (true),
@@ -32,12 +32,12 @@ shared["F​F​l​a​g​A​X​C​o​m​b​i​n​e​G​e​t​O​
         ['Prediction'] = { ['Enabled'] = (false), ['X'] = (0.125), ['Y'] = (0.125),
     
         ['Interval'] = { ['Enabled'] = (false), ['Weapon'] = { ['[Double-Barrel SG]'] = (1), ['[TacticalShotgun]'] = (1), ['[Revolver]'] = (1) } }, --[[ In MS ]]--
-        ['Magnitude'] = { ['Weapon'] = { ['[Double-Barrel SG]'] = { X = (45), Y = (60) }, ['[TacticalShotgun]'] = { X = (50), Y = (50) }, ['[Revolver]'] = { X = (28), Y = (60) } } } --[[ Keep these lower for legit cheating, higher for rage ]]
+        ['Magnitude'] = { ['Weapon'] = { ['[Double-Barrel SG]'] = { X = (45), Y = (60) }, ['[TacticalShotgun]'] = { X = (50), Y = (50) }, ['[Revolver]'] = { X = (28), Y = (60) } } }
     },   
     
      ["AimAssist"] = {
-        ['Enabled'] = (false),
-        ['Toggle'] = ('C'), --[Target Mode ]
+        ['Enabled'] = (false), --[[ Target Mode ]]
+        ['Hold'] = ('V'), --[ Toggle, Hold ]
         ['Sticky'] = (true),
 
         ['Smoothing'] = { ['Enabled'] = (true), ['Ground'] = (0.2), ['Air'] = (0.2) },
@@ -49,20 +49,19 @@ shared["F​F​l​a​g​A​X​C​o​m​b​i​n​e​G​e​t​O​
     },
 
     ["Physics"] = {
-        ['Walking'] = { ['Enabled'] = (false), ['Toggle'] = ('V'), ['Amount'] = (5) }, 
+        ['Walking'] = { ['Enabled'] = (false), ['Toggle'] = ('V')
         ['Falling'] = { ['Enabled'] = (true) }, --[[ Anti Fall ]]
         ['Jumping'] = { ['Enabled'] = (true) }, --[[ No Jump Cooldown ]]
-        ['Velocity'] = { ['Always On'] = (false), ['Magnitude'] = 950 }
     },  
 
     ['Raid Awareness'] = { ['Enabled'] = (false), ['Select'] = ('T'), ['Clear'] = ('Z'), ['Outlines'] = (false), ['Box'] = (true), ['Name'] = (true) },
 
-    ["Modifications"] = {   --[[ Specific To Da Hood Only (NO OFFBRANDS) ]]                                     
-        ['Cooldown Reduction'] = { ['Enabled'] = (true), ['Weapon'] = { ['[Double-Barrel SG]'] = (0.01), ['[Revolver]'] = (0.01) } },                                                                                                                                                                                       
+    ["Modifications"] = {   --[[  Da Hood Only (NO VOIDFALLS ]]                                                                                                                                                                                                                           
         ['Client Redirection'] = { ['Enabled'] = (false) }, 
-        ['Spread Reduction'] = { ['Enabled'] = (false), ['Weapon'] = { ['[Double-Barrel SG]'] = (.4), ['[TacticalShotgun]'] = (.82), ['[Shotgun]'] = (0.8), ['Randomizer'] = { ['Enabled'] = (false), ['Value'] = math.random(0.1, 0.4) } },
+        ['Spread Reduction'] = { ['Enabled'] = (false), ['Weapon'] = { ['[Double-Barrel SG]'] = (.4), ['[TacticalShotgun]'] = (.82), ['[Shotgun]'] = (0.8), ['Randomizer'] = { ['Enabled'] = (false), ['Value'] = math.random(0.1, 0.4, 0.8) } },
         ['Delay Reduction'] = { ['Enabled'] = (true), ['Weapon'] = { ['[Double-Barrel SG]'] = (0.0001), ['[Revolver]'] = (0.0001) } }, 
     },
+                        
     ["SkinChanger"] = {                                       
         ['TacticalShotgun'] = { ['Enabled'] = ['Skin-name'], --[[ New pack not supported ]]
         ['Double-Barrel SG'] = { ['Enabled'] = ['Skin-name'], --[[ New pack not supported ]]
