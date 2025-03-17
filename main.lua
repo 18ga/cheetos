@@ -73,6 +73,10 @@ shared["F​F​l​a​g​A​X​C​o​m​b​i​n​e​G​e​t​O​
             Using an autoclicker will most likely spawn fake bullets in if your delay or cooldown is too low as well
         ]]
     },
+    ["SkinChanger"] = {                                       
+        ['TacticalShotgun'] = { ['Enabled'] = ['Skin-name'], --[[ New pack not supported ]]
+        ['Double-Barrel SG'] = { ['Enabled'] = ['Skin-name'], --[[ New pack not supported ]]
+        ['Revolver'] = { ['Enabled'] = ['Skin-name'], --[[ New pack not supported ]]
     
     ["Conditions"] = {
         ['Forcefield'] = (true),
